@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/Power"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:text="Power 55%"
+            android:textColor="#090909"
+            android:textSize="12sp"
+            app:icon="@drawable/battery_medium"
+            app:iconSize="24dp"
+            app:iconTint="#00000000"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toStartOf="@+id/Seemydistance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <Button
+            android:id="@+id/Mycarinfo"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:backgroundTintMode="screen"
+            android:text="My car info"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:icon="@drawable/leading_icon2"
+            app:iconSize="24dp"
+            app:iconTint="#00999999"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toStartOf="@+id/Showonmap"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Power"
+            app:strokeColor="#00BCD4" />
+
+        <Button
+            android:id="@+id/Remotestop"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:backgroundTintMode="screen"
+            android:text="Remote Stop"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:icon="@drawable/group_1"
+            app:iconSize="24dp"
+            app:iconTint="#00FFFFFF"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mycarinfo" />
+
+        <Button
+            android:id="@+id/remotestart"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:backgroundTintMode="screen"
+            android:text="Remote Start"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:icon="@drawable/icon__bootstrap_reboot_"
+            app:iconSize="24dp"
+            app:iconTint="#00FFFFFF"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toStartOf="@+id/Remotestop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Mycarinfo" />
+
+        <Button
+            android:id="@+id/Seemydistance"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:backgroundTintMode="add"
+            android:text="120 km Distance"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:icon="@drawable/leading_icon2"
+            app:iconSize="24dp"
+            app:iconTint="#00FFFFFF"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:rippleColor="#9C27B0" />
+
+        <Button
+            android:id="@+id/Showonmap"
+            android:layout_width="136dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#999999"
+            android:backgroundTintMode="screen"
+            android:text="Show on map"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:icon="@drawable/location"
+            app:iconPadding="15dp"
+            app:iconSize="24dp"
+            app:iconTint="#00B53B3B"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Seemydistance" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="424dp"
+            android:layout_height="317dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/car"
+            app:layout_constraintBottom_toTopOf="@+id/Power"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Menu" />
+
+        <TextView
+            android:id="@+id/Myvolvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeMaxTextSize="100dp"
+            android:autoSizeMinTextSize="110dp"
+            android:text="My volvo"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/settings"
+            app:layout_constraintStart_toEndOf="@+id/Menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Menu"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#03FFFFFF"
+            app:icon="@drawable/leading_icon"
+            app:iconSize="56dp"
+            app:iconTint="#00FFFFFF"
+            app:iconTintMode="screen"
+            app:layout_constraintEnd_toStartOf="@+id/Myvolvo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="75dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00C5AFAF"
+            android:backgroundTint="#99FFFCFC"
+            app:icon="@drawable/icon_button_toggleable_dark"
+            app:iconSize="54dp"
+            app:iconTint="#FCFAF8F9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Myvolvo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
